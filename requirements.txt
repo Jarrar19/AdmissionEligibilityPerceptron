@@ -1,0 +1,10 @@
+# Core ML & Data Stack for Admission Eligibility Perceptron System
+# Runtime: Python 3.12.10
+pandas==2.2.3
+numpy==2.0.2
+scikit-learn==1.5.2
+matplotlib==3.9.2
+seaborn==0.13.2
+streamlit==1.50.0
+joblib==1.4.2
+pytest==8.4.2

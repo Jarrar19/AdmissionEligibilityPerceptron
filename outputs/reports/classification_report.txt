@@ -1,0 +1,38 @@
+ADMISSION ELIGIBILITY PERCEPTRON CLASSIFICATION REPORT
+============================================================
+
+Test Set Size: 200 samples
+Accuracy:  0.7300
+Precision: 0.7244
+Recall:    0.8288
+F1-Score:  0.7731
+
+Detailed Report:
+              precision    recall  f1-score   support
+
+Not Eligible       0.74      0.61      0.67        89
+    Eligible       0.72      0.83      0.77       111
+
+    accuracy                           0.73       200
+   macro avg       0.73      0.72      0.72       200
+weighted avg       0.73      0.73      0.73       200
+
+Confusion Matrix:
+  TN=54, FP=35
+  FN=19, TP=92
+
+Learned Feature Weights:
+  10th_Percentage: -0.6845
+  12th_Percentage: +0.7692
+  CGPA: +1.5494
+  Entrance_Score: +3.5826
+  Interview_Score: +0.7587
+  Aptitude_Score: -0.2341
+  Extracurricular_Score: +2.4881
+  Attendance: -2.3495
+  Previous_Backlogs: -8.1285
+Bias (b): +2.0000
+
+Secondary Comparison Table:
+  Perceptron:          Acc=0.7300, F1=0.7731
+  Logistic Regression: Acc=0.7600, F1=0.7913

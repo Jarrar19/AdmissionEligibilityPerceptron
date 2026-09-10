@@ -1,0 +1,66 @@
+{
+  "primary_model": "Perceptron Binary Classifier (sklearn.linear_model.Perceptron)",
+  "hyperparameters": {
+    "alpha": 0.0001,
+    "class_weight": null,
+    "early_stopping": false,
+    "eta0": 1.0,
+    "fit_intercept": true,
+    "l1_ratio": 0.15,
+    "max_iter": 1000,
+    "n_iter_no_change": 5,
+    "n_jobs": null,
+    "penalty": null,
+    "random_state": 42,
+    "shuffle": true,
+    "tol": 0.001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "test_sample_count": 200,
+  "metrics": {
+    "accuracy": 0.73,
+    "precision": 0.7244,
+    "recall": 0.8288,
+    "f1_score": 0.7731
+  },
+  "confusion_matrix": {
+    "true_negatives": 54,
+    "false_positives": 35,
+    "false_negatives": 19,
+    "true_positives": 92,
+    "matrix": [
+      [
+        54,
+        35
+      ],
+      [
+        19,
+        92
+      ]
+    ]
+  },
+  "model_parameters": {
+    "weights": {
+      "10th_Percentage": -0.6845,
+      "12th_Percentage": 0.7692,
+      "CGPA": 1.5494,
+      "Entrance_Score": 3.5826,
+      "Interview_Score": 0.7587,
+      "Aptitude_Score": -0.2341,
+      "Extracurricular_Score": 2.4881,
+      "Attendance": -2.3495,
+      "Previous_Backlogs": -8.1285
+    },
+    "bias_intercept": 2.0,
+    "decision_rule": "z = sum(w_i * x_i) + b; Predict Eligible (1) if z >= 0 else Not Eligible (0)"
+  },
+  "secondary_comparison": {
+    "model": "Logistic Regression (Secondary Baseline)",
+    "accuracy": 0.76,
+    "precision": 0.7647,
+    "recall": 0.8198,
+    "f1_score": 0.7913
+  }
+}

@@ -3,6 +3,7 @@
 [![Python 3.12.10](https://img.shields.io/badge/Python-3.12.10-blue.svg)](https://www.python.org/)
 [![Model: Perceptron](https://img.shields.io/badge/Model-Perceptron%20(sklearn)-success.svg)](https://scikit-learn.org/)
 [![Framework: Streamlit](https://img.shields.io/badge/UI-Streamlit%201.50-FF4B4B.svg)](https://streamlit.io/)
+[![Live App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://admissioneligibilityperceptron.streamlit.app)
 [![Tests: 20 Passed](https://img.shields.io/badge/Tests-20%20Passed%20(100%25)-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -152,16 +153,21 @@ Every metric below is computed programmatically from the held-out test set of 20
 
 ## 7. Streamlit Web Application
 
+🌐 **Live Deployed Application**: [https://admissioneligibilityperceptron.streamlit.app](https://admissioneligibilityperceptron.streamlit.app)
+
 The Streamlit app (`app/app.py`) provides an interactive interface for evaluating applicants:
 - **Instant Pipeline Loading**: Loads `admission_perceptron_pipeline.joblib` without retraining.
 - **Strict Input Validation**: Rejects invalid values (e.g., negative backlogs, CGPA > 10) with descriptive messages.
 - **Prominent Decision Cards**: Displays green for `ELIGIBLE` and red for `NOT ELIGIBLE`.
-- **Decision Transparency**: Displays the linear score $z$ and a full feature contribution table ($w_i \cdot x_i$).
-- **Academic Disclaimer Callout**: Prominently displayed across the header.
+- **Decision Transparency**: Displays the linear score $z = \mathbf{w}^T \mathbf{x} + b$ and a full feature contribution table ($w_i \cdot x_i$).
+- **Professional Academic UI**: Clean, high-contrast light theme built for clarity and accessibility.
 
 ---
 
 ## 8. Installation & Execution
+
+> [!TIP]
+> **Try It Live Online**: You can test applicant profiles directly on the cloud deployment at [admissioneligibilityperceptron.streamlit.app](https://admissioneligibilityperceptron.streamlit.app) without needing to install or run anything locally.
 
 ### Prerequisites
 - Python 3.12.10 (Host environment runtime)
